@@ -1,10 +1,22 @@
+@google_search
 Feature: ilk feature file
-  Scenario: TC01_google_iphone_arama
+  Background:
     Given kullanici google gider
+
+
+  @iphone
+  Scenario: TC01_google_iphone_arama
+
     When kullanici iphone için arama yapar
     Then sonuclarda iphone oldugunu dogrular
   And close the application
 
+@tesla
+  Scenario: TC02_google_tesla_arama
+
+  When kullanıcı tesla için arama yapar
+  Then sonuclarda tesla olduğunu doğrular
+  Then close the application
 
 
 #  1. Her feature file, Feature: kelimesi ile baslamak zorundadir
@@ -17,3 +29,9 @@ Feature: ilk feature file
 #  8. And, When -> Genelde ara adimlarda baglar olarak kullanilir
 #  NOTE: Teknik olarak istenilen kelime isteniler step de kullanilabilir,
 #        ama anlam karmasasi olmamasi icin bu adimlar takip edilir
+  #  9. Belirli senaryoları çalıştırmak için cucumber tagsler kullanılır
+  # tagler feature scenario scenario outline examples kelimeleri ile birlikte kullanılır
+ #  10. Background: Her bir Scenario kelimesinden ONCE tek bir sefer calisir
+#  11. dryRun=false -> dryRun yokmus gibi normal sekilde calisir. Yani tum adimlari tek tetk browserda acar.
+#      dryRun=true  -> Yeni bir STEP(adim) eklendiginde sadece tanimlanmamis step definitions lari olusturmak icin kullanilir
+#      kullanilma sebebi zamandan tasarrufdur.
