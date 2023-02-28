@@ -43,4 +43,14 @@ public class GoogleStepDefinitions {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains("tesla"));
 
     }
+    @When("kullanici {string} için arama yapar")
+    public void kullanici_için_arama_yapar(String string) {
+        // Write code here that turns the phrase above into concrete actions
+       googlePage.searchBox.sendKeys(string+Keys.ENTER);
+    }
+    @Then("sonuclarda {string} oldugunu dogrular")
+    public void sonuclarda_oldugunu_dogrular(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
+    }
 }

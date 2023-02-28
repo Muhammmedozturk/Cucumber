@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",//features folder path
         glue = "stepdefinitions",//stepdefinitions path
-        tags="@iphone or @tesla",
+        tags="@scenario_outline_1",
         dryRun =false // Ama dryRun true demek hızlı bütün stepleri
         // ara tara tanımlanmamış step definition var mı yok mu ona bakar(Missing definition var mı yok mu ona bakar)
         //zamandan tasarruf etmemizi sağlar. DryRun
