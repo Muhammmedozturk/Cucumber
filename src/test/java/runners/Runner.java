@@ -1,18 +1,26 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin={
+                "pretty",//raporların daha okunaklı olması için
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
+        monochrome = true,//raporların consolda daha okunaklı olarak çıkmasını sağlar
         features = "./src/test/resources/features",//features folder path
-        glue = "stepdefinitions",//stepdefinitions path
-        tags="@scenario_outline_1",
-        dryRun =false // Ama dryRun true demek hızlı bütün stepleri
-        // ara tara tanımlanmamış step definition var mı yok mu ona bakar(Missing definition var mı yok mu ona bakar)
-        //zamandan tasarruf etmemizi sağlar. DryRun
+        glue = "stepdefinitions",   //stepdefinitions path
+        tags = "@personel_olusturma",
+        dryRun = false
+
 )
 public class Runner {
 }
 //Bu sinif Test caseleri RUN etmek icin kullanilir
 //Ve konfigurasyonlar icin kullanilir
-//
+//Runner class, features file lar ile step defitions i birbirile baglar

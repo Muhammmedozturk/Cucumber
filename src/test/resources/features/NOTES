@@ -39,3 +39,13 @@ Feature: ilk feature file
     public WebElement popUpAccept;
     @FindBy(name = "q")
     public WebElement searchBox;
+
+    Scenario Outline
+    # Scenario -->Scenario outline
+    #"" ->  "<sutunismii>"
+    #Exaple kelimesi Scenario outlineden sonra kullanılmalı
+    Yani benzer senaryoyu tekrar tekrar farklı datalarla çalıştırmak için kullanılır
+    Scenario outline cucumberde çok önemlidir
+    Ne zaman birden fazla data ile işlem yaparsak scenario outline kullanmalıyız
+    Scenario outline excel ile otomosyon yapmaya benzer tek farkı kullanımı dah akolay
+
