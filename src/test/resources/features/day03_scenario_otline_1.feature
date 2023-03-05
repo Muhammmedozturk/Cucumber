@@ -2,7 +2,7 @@
 Feature: arama_feature
   Background: googlea_git
     Given kullanici google gider
-
+@regression
     Scenario Outline: arama_testi
       When kullanici "<product>" için arama yapar
       Then sonuclarda "<product>" oldugunu dogrular

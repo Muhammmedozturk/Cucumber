@@ -2,17 +2,18 @@
 Feature: arama_feature
   Background: googlea_git
     Given kullanici google gider
-
+@smoke
     Scenario: TC01_google_iphone_arama
       When kullanici "iphone" için arama yapar
   Then sonuclarda "iphone" oldugunu dogrular
       And close the application
       # "veri" feature file paramatize etmek için kullanılır
+  @smoke
   Scenario: TC02_google_iphone_arama
     When kullanici "tesla" için arama yapar
     Then sonuclarda "tesla" oldugunu dogrular
     And close the application
-
+  @smoke
   Scenario: TC03_google_iphone_arama
     When kullanici "water" için arama yapar
     Then sonuclarda "water" oldugunu dogrular

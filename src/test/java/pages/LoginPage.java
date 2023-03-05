@@ -33,3 +33,17 @@ DataTablelar ara adimlardada(STEPS) kullanilabilir
     @FindBy(xpath = "//button[text()=' Login']")
     public WebElement login;
 }
+
+/*
+Scenario outtline DDT yapılabilir
+Test adımlarını data reusable yapmak için kullanılır
+En çok kullanılan cucumber özelliklerinden biridir
+Examples kelimesi veri girişleri için kullanılır
+
+Data tables ile DDT yapılabilir
+Test adımlarını data reusable yapmak için kullanılır
+Scenario Outline kadar yaygın değildir
+Examples kelimesi kullanılmaz
+Steps definitionslardaki data tipi DATATABLE
+Datatableler araa adımlardada steps kullanılabilir
+ */
