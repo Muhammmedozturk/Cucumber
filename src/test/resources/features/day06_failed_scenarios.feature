@@ -11,5 +11,6 @@ Feature: hooks_test
   Scenario: TC02_google_tesla_arama
     When kullanici "tesla" için arama yapar
     Then sonuclarda "toros" oldugunu dogrular
+    Then ekran görüntüsü al
     Then close the application
 
