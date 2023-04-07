@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 5, 2023 10:45:45 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 7, 2023 10:36:17 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 5, 2023 10:45:45 PM</h3>
+<h3>Apr 7, 2023 10:36:17 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 5, 2023 10:46:54 PM</h3>
+<h3>Apr 7, 2023 10:36:21 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='70%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='10%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='12%'><b>1</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"hooks_test":64.02
+"dean olarak sayfaya giris":0.141
 };
 </script>
 <div class="row">
@@ -177,12 +172,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@failed_scenario</td>
-<td>1</td>
-<td>1</td>
+<td>@proje</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -212,16 +207,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 0,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 0,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 7,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -243,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@failed_scenario</a>
+<a class="dropdown-item" href="#">@proje</a>
 </ul>
 </li>
 </ul>
@@ -254,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">hooks_test</p>
+            <p class="name">dean olarak sayfaya giris</p>
             <p class="text-sm">
-              <span>10:45:50 PM</span> / <span>00:01:04:020</span>
+              <span>10:36:21 PM</span> / <span>00:00:00:141</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -264,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">hooks_test</h5>
-<span class='badge badge-success'>03.05.2023 10:45:50 PM</span>
-<span class='badge badge-danger'>03.05.2023 10:46:54 PM</span>
-<span class='badge badge-default'>00:01:04:020</span>
+<h5 class="test-status text-fail">dean olarak sayfaya giris</h5>
+<span class='badge badge-success'>04.07.2023 10:36:21 PM</span>
+<span class='badge badge-danger'>04.07.2023 10:36:21 PM</span>
+<span class='badge badge-default'>00:00:00:141</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -279,90 +274,59 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_google_iphone_arama</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC_01_dean_mesajlari_gorur</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.kullanici_google_gider()">
-                <span>Given kullanici google gider</span>
-      <div>
-      </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>TC_01_dean_mesajlari_gorur</div>
+                </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.kullanici_için_arama_yapar(java.lang.String)">
-                <span>When kullanici "iphone" için arama yapar</span>
-      <div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Kullanici Given Kullanici "https://www.managementonschools.com" adresine girer</span>
+      <div>Step undefined
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.sonuclarda_oldugunu_dogrular(java.lang.String)">
-                <span>Then sonuclarda "apple" oldugunu dogrular</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.close_the_application()">
-                <span>Then close the application</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>TC02_google_tesla_arama</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.kullanici_google_gider()">
-                <span>Given kullanici google gider</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.kullanici_için_arama_yapar(java.lang.String)">
-                <span>When kullanici "tesla" için arama yapar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefinitions.GoogleStepDefinitions.sonuclarda_oldugunu_dogrular(java.lang.String)">
-                <span>Then sonuclarda "toros" oldugunu dogrular</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.GoogleStepDefinitions.sonuclarda_oldugunu_dogrular(GoogleStepDefinitions.java:54)
-	at ✽.sonuclarda "toros" oldugunu dogrular(file:///C:/Users/EFSANE/IdeaProjects/Cucumber/./src/test/resources/features/day06_failed_scenarios.feature:13)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.GenelStepDefinition.ekran_görüntüsü_al()">
-                <span>Then ekran görüntüsü al</span>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When kullanici login butonuna tiklar</span>
       <div>Step skipped
       </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.GoogleStepDefinitions.close_the_application()">
-                <span>Then close the application</span>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici "yildiz" alanina kullanici adini girer</span>
       <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>hooks.Hooks.tearDownScenarios(io.cucumber.java.Scenario)</span>
-      <div>failed_scenario_
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici "yildiz321" alanina kullanici password girer</span>
+      <div>Step skipped
       </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici login butonuna tiklar</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici acilan sayfada menu butonuna tiklar</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici sol taraftan contact get all butonuna tiklar</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And kullanici acilan sayfada yazilan mesajlari goruntuledigini dogrular</span>
+      <div>Step skipped
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -388,79 +352,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@failed_scenario</p>
+<p class="name">@proje</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@failed_scenario</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:45:50 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_google_iphone_arama</a>
-<div class="">
-<span class="badge badge-default">hooks_test.TC01_google_iphone_arama</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:46:25 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>TC02_google_tesla_arama</a>
-<div class="">
-<span class="badge badge-default">hooks_test.TC02_google_tesla_arama</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@proje</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -473,11 +373,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:46:50 PM</td>
+<td>22:36:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='13'>Then sonuclarda "toros" oldugunu dogrular</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_01_dean_mesajlari_gorur</a>
 <div class="">
-<span class="badge badge-default">hooks_test.TC02_google_tesla_arama.Then sonuclarda "toros" oldugunu dogrular</span>
+<span class="badge badge-default">dean olarak sayfaya giris.TC_01_dean_mesajlari_gorur</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:36:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>TC_01_dean_mesajlari_gorur</a>
+<div class="">
+<span class="badge badge-default">dean olarak sayfaya giris.TC_01_dean_mesajlari_gorur</span>
 </div>
 </td>
 </tr>
